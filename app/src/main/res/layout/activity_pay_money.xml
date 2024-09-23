@@ -1,0 +1,76 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/bank_image_view"
+            android:layout_width="139dp"
+            android:layout_height="133dp"
+            android:contentDescription="Bank Transfer Image" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="โอนธนาคาร"
+            android:textSize="20sp"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ชำระเงิน"
+            android:onClick="onPaymentMethodSelected" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/cash_image_view"
+            android:layout_width="149dp"
+            android:layout_height="128dp"
+            android:contentDescription="Cash Payment Image" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="จ่ายเงินสด"
+            android:textSize="20sp"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ชำระเงิน"
+            android:onClick="onPaymentMethodSelected" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/total_price_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="ยอดรวมทั้งหมด"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+</LinearLayout>
